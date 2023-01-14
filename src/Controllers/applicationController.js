@@ -1,7 +1,7 @@
 const jobPostingModel = require("../Models/jobPostingModels");
 const ApplicationModel = require("../Models/applicationModel");
 const {isVAlidEmail}= require('../validation')
-const marked = require('marked');
+const md = require('markdown-it')(); // import markdown-it library
 const applicationModel = require("../Models/applicationModel");
 
 //----------------Apply for a job posting------------------//
@@ -31,13 +31,15 @@ const applyForJob = async (req, res) => {
     return res.status(404).send({ message: `Job posting not found` });
   }
   try {
+    // render cover letter in Markdown
+    const coverLetterHTML = md.render(req.body.coverLetter);
     //Create new job application
     const application = await ApplicationModel.create({
       jobId: req.body.jobId,
       name: req.body.name,
       email: req.body.email,
       resume: req.body.resume,
-      coverLetter: req.body.coverLetter,
+      coverLetter: coverLetterHTML,
     });
     res
       .status(201)

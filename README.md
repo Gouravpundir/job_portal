@@ -47,10 +47,10 @@ POST /user: Create the user
 
 user
 {
-"fname":"John",
-"lname":"Adam",
-"email":"john5@gmail.com",
-"password":"john22@"
+"fname":"Ram",
+"lname":"Singh",
+"email":"ram5@gmail.com",
+"password":"ram22@"
 }
 
 User login response-:
@@ -68,7 +68,7 @@ Jop posting
 {
 "title": "Software Developer",
 "description": "We are looking for a skilled software developer to join our team.",
-"email": "johndoe@example.com",
+"email": "ram@example.com",
 "skills": ["JavaScript", "React", "Node.js"],
 "experience": "entry",
 }
@@ -76,13 +76,29 @@ Jop posting
 
 Application
 {
-"jobId": "63c2781f1778588a2e19502f"
-"name": "John Doe",
-"email": "johndoe@example.com",
-"resume": "link to resume",
-"coverLetter": "# Cover Letter
-Dear Hiring Manager,
-I am writing to express my interest in the Software Developer position at your company."
+  "jobId": "63c2781f1778588a2e19502f",
+    "name": "Ram",
+    "email": "ram123@example.com",
+    "resume": "https://example.com/resume.pdf",
+    "coverLetter": "# Cover Letter\n\nI am writing to apply for the position of Software Developer at your company. I have 5 years of experience in the field and am confident that I would be a valuable asset to your team."
+}
+
+Response
+
+{
+    "status": true,
+    "messege": "Success",
+    "Data": {
+        "jobId": "63c2781f1778588a2e19502f",
+        "name": " Ram ",
+        "email": "ram123@example.com",
+        "resume": "https://example.com/resume.pdf",
+        "coverLetter": "<h1>Cover Letter</h1>\n<p>I am writing to apply for the position of Software Developer at your company. I have 5 years of experience in the field and am confident that I would be a valuable asset to your team.</p>",
+        "_id": "63c2a949f1d6a09410e1ca30",
+        "createdAt": "2023-01-14T13:08:25.055Z",
+        "updatedAt": "2023-01-14T13:08:25.055Z",
+        "__v": 0
+    }
 }
 
 Known issues and bugs
