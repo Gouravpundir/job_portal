@@ -1,4 +1,4 @@
-Job Board Application
+# Job Board Application
 
 A server-side application for managing a job board for software developers. It provides the following features:
 
@@ -8,28 +8,29 @@ A user can view the details of a specific job posting, including the title, desc
 A user can apply for a job posting by providing their name, email, resume, and a cover letter. The cover letter should be in Markdown format.
 A user who created a job posting can view a list of all the applications for that job, including the name, email, and cover letter of the applicant.
 
-Getting Started
+# Getting Started
 
-Prerequisites
+# Prerequisites
 
 1. Node.js and npm
 2. MongoDB
 
-Installation
+# Installation
 
 Clone the repository
 https://github.com/Gouravpundir/job_portal.git
 
-Install the dependencies
+# Install the dependencies
 npm install
 
-Start the application
+# Start the application
 
 1. npm start
 2. Connect to the MongoDB
    mongo <dbname>
 
-API documentation
+# API documentation
+   
 The application exposes a RESTful API for clients to access the job postings and applications.
 
 Endpoints
@@ -45,25 +46,25 @@ Request and response examples
 POST /login: Login user
 POST /user: Create the user
 
-user
+# User
 {
 "fname":"Ram",
 "lname":"Singh",
 "email":"ram5@gmail.com",
 "password":"ram22@"
 }
-
-User login response-:
+"\n\n"
+# Login response-:
 {
 "status": true,
 "message": "User login successfull",
 "data": {
 "userId": "63c26465f38f4a81eb8a15e5",
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2MyNjQ2NWYzOGY0YTgxZWI4YTE1ZTUiLCJpYXQiOjE2NzM2OTg1NDAsImV4cCI6MTY3MzcwMjE0MH0.Ku9C4hEXhC8CN6PbxCwJQRXSb9p1afrqDkzPkkfoH_o"
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2MyNjQ2NWYzOGY0YTgxZWI4YTE1ZTUiLCJpYXQiOjE2NzM2OTg1NDAsImV4cCI6MTY3Mzc"\n\n"wMjE0MH0.Ku9C4hEXhC8CN6PbxCwJQRXSb9p1afrqDkzPkkfoH_o"
 }
 }
-
-Jop posting
+"\n\n"
+# Jop posting
 [
 {
 "title": "Software Developer",
@@ -73,17 +74,17 @@ Jop posting
 "experience": "entry",
 }
 ]
-
+"\n\n"
 # Application
 {
   "jobId": "63c2781f1778588a2e19502f",
     "name": "Ram",
     "email": "ram123@example.com",
     "resume": "https://example.com/resume.pdf",
-    "coverLetter": "# Cover Letter\n\nI am writing to apply for the position of Software Developer at your company. I have 5 years of experience in the field and am confident that I would be a valuable asset to your team."
+    "coverLetter": "# Cover Letter\n\nI am writing to apply for the position of Software Developer at your company. I have 5 years of "\n\n" experience in the field and am confident that I would be a valuable asset to your team."
 }
 
-Response
+# Response
 
 {
     "status": true,
@@ -93,7 +94,7 @@ Response
         "name": " Ram ",
         "email": "ram123@example.com",
         "resume": "https://example.com/resume.pdf",
-        "coverLetter": "<h1>Cover Letter</h1>\n<p>I am writing to apply for the position of Software Developer at your company. I have 5 years of experience in the field and am confident that I would be a valuable asset to your team.</p>",
+        "coverLetter": "<h1>Cover Letter</h1>\n<p>I am writing to apply for the position of Software Developer at your company. I have 5 years of "\n\n" experience in the  field and am confident that I would be a valuable asset to your team.</p>",
         "_id": "63c2a949f1d6a09410e1ca30",
         "createdAt": "2023-01-14T13:08:25.055Z",
         "updatedAt": "2023-01-14T13:08:25.055Z",
@@ -101,5 +102,5 @@ Response
     }
 }
 
-Known issues and bugs
+# Known issues and bugs
 None at the moment
