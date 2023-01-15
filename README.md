@@ -64,8 +64,8 @@ POST /user: Create the user
 }
 
 # Jop posting 
-["\n\n"
-{"\n\n"
+[
+{
 "title": "Software Developer",
 "description": "We are looking for a skilled software developer to join our team.",
 "email": "ram@example.com",
@@ -88,13 +88,13 @@ POST /user: Create the user
 {
     "status": true, 
     "messege": "Success", 
-    "Data": {"\n\n"
+    "Data": {
         "jobId": "63c2781f1778588a2e19502f", 
-        "name": " Ram ","\n\n"
+        "name": " Ram ",
         "email": "ram123@example.com",
         "resume": "https://example.com/resume.pdf", 
         "coverLetter": "<h1>Cover Letter</h1>\n<p>I am writing to apply for the position of Software Developer at your company. I have 5 years of  experience in the  field and am confident that I would be a valuable asset to your team.</p>", 
-        "_id": "63c2a949f1d6a09410e1ca30", "\n\n"
+        "_id": "63c2a949f1d6a09410e1ca30",
         "createdAt": "2023-01-14T13:08:25.055Z", 
         "updatedAt": "2023-01-14T13:08:25.055Z", 
         "__v": 0 
